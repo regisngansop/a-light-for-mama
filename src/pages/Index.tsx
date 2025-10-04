@@ -174,17 +174,6 @@ const Index = () => {
 
       {/* Floating Decorative Elements - Arrière-plan */}
       <div className="fixed inset-0 z-5 pointer-events-none overflow-hidden">
-        {/* Doves - Left Side */}
-        <Bird className="absolute top-20 left-10 text-primary/10 w-12 h-12 animate-float" style={{ animationDelay: '0s' }} />
-        <Bird className="absolute top-40 left-32 text-secondary/10 w-10 h-10 animate-float" style={{ animationDelay: '1s' }} />
-        <Bird className="absolute top-[60vh] left-20 text-primary/8 w-14 h-14 animate-float" style={{ animationDelay: '2.5s' }} />
-        
-        {/* Doves - Right Side */}
-        <Bird className="absolute top-32 right-16 text-secondary/10 w-11 h-11 animate-float" style={{ animationDelay: '0.5s' }} />
-        <Bird className="absolute top-[50vh] right-24 text-primary/10 w-13 h-13 animate-float" style={{ animationDelay: '1.8s' }} />
-        <Bird className="absolute bottom-40 right-12 text-secondary/8 w-12 h-12 animate-float" style={{ animationDelay: '3s' }} />
-        
-        
         {/* Bulles d'amour partout - Arrière-plan */}
         <div className="absolute top-[10vh] left-[10vw] text-primary/10 w-6 h-6 animate-float" style={{ animationDelay: '0.5s' }}>
           <div className="w-full h-full rounded-full bg-primary/15 animate-pulse">💕</div>
@@ -319,11 +308,11 @@ const Index = () => {
                 </div>
                 
                 {/* Colombe de paix à côté de la photo */}
-                <div className="absolute -top-4 -right-4 z-20">
+                <div className="absolute -top-6 -right-6 z-20">
                   <img 
                     src={doveWithOliveBranch} 
                     alt="Colombe de paix" 
-                    className="w-12 h-12 object-contain drop-shadow-lg animate-float"
+                    className="w-20 h-20 object-contain drop-shadow-lg animate-float"
                     style={{ animationDelay: '0s' }}
                   />
                 </div>
