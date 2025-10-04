@@ -12,3 +12,9 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemap pour l'hommage à Maman Njiki Ruth
+Sitemap: https://a-light-for-mama.vercel.app/sitemap.xml
+
+# Site d'hommage à Maman Njiki Ruth
+# Un hommage d'amour éternel à une femme de foi et de prière
