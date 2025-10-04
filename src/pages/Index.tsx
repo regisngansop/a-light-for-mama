@@ -308,11 +308,11 @@ const Index = () => {
                 </div>
                 
                 {/* Colombe de paix à côté de la photo */}
-                <div className="absolute -top-6 -right-6 z-20">
+                <div className="absolute -top-8 -right-8 z-20">
                   <img 
                     src={doveWithOliveBranch} 
                     alt="Colombe de paix" 
-                    className="w-20 h-20 object-contain drop-shadow-lg animate-float"
+                    className="w-28 h-28 object-contain drop-shadow-lg animate-float"
                     style={{ animationDelay: '0s' }}
                   />
                 </div>
