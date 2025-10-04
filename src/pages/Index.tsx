@@ -215,6 +215,34 @@ const Index = () => {
         <div className="absolute top-[5vh] right-[30vw] text-primary/25 w-7 h-7 animate-float" style={{ animationDelay: '1.5s' }}>
           <div className="w-full h-full rounded-full bg-primary/25 animate-pulse">💗</div>
         </div>
+        
+        {/* Papillons blancs qui défilent */}
+        <div className="absolute top-[20vh] left-0 text-white/60 w-8 h-8 animate-butterfly-fly" style={{ animationDelay: '0s' }}>
+          <div className="w-full h-full text-2xl">🦋</div>
+        </div>
+        <div className="absolute top-[40vh] left-0 text-white/50 w-6 h-6 animate-butterfly-fly" style={{ animationDelay: '3s' }}>
+          <div className="w-full h-full text-xl">🦋</div>
+        </div>
+        <div className="absolute top-[60vh] left-0 text-white/70 w-7 h-7 animate-butterfly-fly" style={{ animationDelay: '6s' }}>
+          <div className="w-full h-full text-2xl">🦋</div>
+        </div>
+        <div className="absolute top-[80vh] left-0 text-white/40 w-5 h-5 animate-butterfly-fly" style={{ animationDelay: '9s' }}>
+          <div className="w-full h-full text-lg">🦋</div>
+        </div>
+        
+        {/* Papillons qui volent en sens inverse */}
+        <div className="absolute top-[30vh] right-0 text-white/60 w-6 h-6 animate-butterfly-fly-reverse" style={{ animationDelay: '2s' }}>
+          <div className="w-full h-full text-xl">🦋</div>
+        </div>
+        <div className="absolute top-[50vh] right-0 text-white/50 w-8 h-8 animate-butterfly-fly-reverse" style={{ animationDelay: '5s' }}>
+          <div className="w-full h-full text-2xl">🦋</div>
+        </div>
+        <div className="absolute top-[70vh] right-0 text-white/70 w-5 h-5 animate-butterfly-fly-reverse" style={{ animationDelay: '8s' }}>
+          <div className="w-full h-full text-lg">🦋</div>
+        </div>
+        <div className="absolute top-[10vh] right-0 text-white/40 w-7 h-7 animate-butterfly-fly-reverse" style={{ animationDelay: '11s' }}>
+          <div className="w-full h-full text-xl">🦋</div>
+        </div>
       </div>
 
       {/* Content - Carte élégante */}
@@ -440,6 +468,9 @@ const Index = () => {
                 </div>
                 <p className="text-muted-foreground italic text-base md:text-lg">
                   « Son amour brille à jamais dans nos cœurs »
+                </p>
+                <p className="text-muted-foreground text-sm mt-4">
+                  Régis Armel Ngansop | "Miguel"
                 </p>
               </div>
             </div>
