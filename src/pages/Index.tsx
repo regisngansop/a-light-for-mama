@@ -172,43 +172,43 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/75 via-transparent to-background/75"></div>
       </div>
 
-      {/* Floating Decorative Elements */}
-      <div className="fixed inset-0 z-20 pointer-events-none overflow-hidden">
+      {/* Floating Decorative Elements - Arrière-plan */}
+      <div className="fixed inset-0 z-5 pointer-events-none overflow-hidden">
         {/* Doves - Left Side */}
-        <Bird className="absolute top-20 left-10 text-primary/20 w-12 h-12 animate-float" style={{ animationDelay: '0s' }} />
-        <Bird className="absolute top-40 left-32 text-secondary/20 w-10 h-10 animate-float" style={{ animationDelay: '1s' }} />
-        <Bird className="absolute top-[60vh] left-20 text-primary/15 w-14 h-14 animate-float" style={{ animationDelay: '2.5s' }} />
+        <Bird className="absolute top-20 left-10 text-primary/10 w-12 h-12 animate-float" style={{ animationDelay: '0s' }} />
+        <Bird className="absolute top-40 left-32 text-secondary/10 w-10 h-10 animate-float" style={{ animationDelay: '1s' }} />
+        <Bird className="absolute top-[60vh] left-20 text-primary/8 w-14 h-14 animate-float" style={{ animationDelay: '2.5s' }} />
         
         {/* Doves - Right Side */}
-        <Bird className="absolute top-32 right-16 text-secondary/20 w-11 h-11 animate-float" style={{ animationDelay: '0.5s' }} />
-        <Bird className="absolute top-[50vh] right-24 text-primary/20 w-13 h-13 animate-float" style={{ animationDelay: '1.8s' }} />
-        <Bird className="absolute bottom-40 right-12 text-secondary/15 w-12 h-12 animate-float" style={{ animationDelay: '3s' }} />
+        <Bird className="absolute top-32 right-16 text-secondary/10 w-11 h-11 animate-float" style={{ animationDelay: '0.5s' }} />
+        <Bird className="absolute top-[50vh] right-24 text-primary/10 w-13 h-13 animate-float" style={{ animationDelay: '1.8s' }} />
+        <Bird className="absolute bottom-40 right-12 text-secondary/8 w-12 h-12 animate-float" style={{ animationDelay: '3s' }} />
         
         
-        {/* Bulles d'amour partout */}
-        <div className="absolute top-[10vh] left-[10vw] text-primary/20 w-6 h-6 animate-float" style={{ animationDelay: '0.5s' }}>
-          <div className="w-full h-full rounded-full bg-primary/30 animate-pulse">💕</div>
+        {/* Bulles d'amour partout - Arrière-plan */}
+        <div className="absolute top-[10vh] left-[10vw] text-primary/10 w-6 h-6 animate-float" style={{ animationDelay: '0.5s' }}>
+          <div className="w-full h-full rounded-full bg-primary/15 animate-pulse">💕</div>
         </div>
-        <div className="absolute top-[25vh] right-[15vw] text-primary/25 w-8 h-8 animate-float" style={{ animationDelay: '1.2s' }}>
-          <div className="w-full h-full rounded-full bg-primary/25 animate-pulse">💖</div>
+        <div className="absolute top-[25vh] right-[15vw] text-primary/12 w-8 h-8 animate-float" style={{ animationDelay: '1.2s' }}>
+          <div className="w-full h-full rounded-full bg-primary/12 animate-pulse">💖</div>
         </div>
-        <div className="absolute top-[45vh] left-[20vw] text-primary/20 w-5 h-5 animate-float" style={{ animationDelay: '2.8s' }}>
-          <div className="w-full h-full rounded-full bg-primary/30 animate-pulse">💝</div>
+        <div className="absolute top-[45vh] left-[20vw] text-primary/10 w-5 h-5 animate-float" style={{ animationDelay: '2.8s' }}>
+          <div className="w-full h-full rounded-full bg-primary/15 animate-pulse">💝</div>
         </div>
-        <div className="absolute top-[60vh] right-[25vw] text-primary/25 w-7 h-7 animate-float" style={{ animationDelay: '1.8s' }}>
-          <div className="w-full h-full rounded-full bg-primary/25 animate-pulse">💗</div>
+        <div className="absolute top-[60vh] right-[25vw] text-primary/12 w-7 h-7 animate-float" style={{ animationDelay: '1.8s' }}>
+          <div className="w-full h-full rounded-full bg-primary/12 animate-pulse">💗</div>
         </div>
-        <div className="absolute bottom-[30vh] left-[15vw] text-primary/20 w-6 h-6 animate-float" style={{ animationDelay: '3.2s' }}>
-          <div className="w-full h-full rounded-full bg-primary/30 animate-pulse">💕</div>
+        <div className="absolute bottom-[30vh] left-[15vw] text-primary/10 w-6 h-6 animate-float" style={{ animationDelay: '3.2s' }}>
+          <div className="w-full h-full rounded-full bg-primary/15 animate-pulse">💕</div>
         </div>
-        <div className="absolute bottom-[15vh] right-[20vw] text-primary/25 w-8 h-8 animate-float" style={{ animationDelay: '0.9s' }}>
-          <div className="w-full h-full rounded-full bg-primary/25 animate-pulse">💖</div>
+        <div className="absolute bottom-[15vh] right-[20vw] text-primary/12 w-8 h-8 animate-float" style={{ animationDelay: '0.9s' }}>
+          <div className="w-full h-full rounded-full bg-primary/12 animate-pulse">💖</div>
         </div>
-        <div className="absolute top-[80vh] left-[30vw] text-primary/20 w-5 h-5 animate-float" style={{ animationDelay: '2.5s' }}>
-          <div className="w-full h-full rounded-full bg-primary/30 animate-pulse">💝</div>
+        <div className="absolute top-[80vh] left-[30vw] text-primary/10 w-5 h-5 animate-float" style={{ animationDelay: '2.5s' }}>
+          <div className="w-full h-full rounded-full bg-primary/15 animate-pulse">💝</div>
         </div>
-        <div className="absolute top-[5vh] right-[30vw] text-primary/25 w-7 h-7 animate-float" style={{ animationDelay: '1.5s' }}>
-          <div className="w-full h-full rounded-full bg-primary/25 animate-pulse">💗</div>
+        <div className="absolute top-[5vh] right-[30vw] text-primary/12 w-7 h-7 animate-float" style={{ animationDelay: '1.5s' }}>
+          <div className="w-full h-full rounded-full bg-primary/12 animate-pulse">💗</div>
         </div>
         
       </div>
