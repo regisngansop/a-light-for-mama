@@ -13,8 +13,8 @@ const Index = () => {
   
   // Médias pour le carousel - alternance image/vidéo
   const images = [
+    { type: 'image', src: '/image.png', alt: 'Maman Njiki Ruth - Photo Principale' },
     { type: 'image', src: mamanNjikiPhoto, alt: 'Maman Njiki Ruth' },
-    { type: 'image', src: '/image.png', alt: 'Maman Njiki Ruth - Photo 2' },
     { type: 'image', src: '/love.png', alt: 'Maman Njiki Ruth - Moment d\'amour' }
   ];
   
