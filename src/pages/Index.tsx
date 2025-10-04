@@ -173,7 +173,7 @@ const Index = () => {
       </div>
 
       {/* Floating Decorative Elements */}
-      <div className="fixed inset-0 z-5 pointer-events-none overflow-hidden">
+      <div className="fixed inset-0 z-20 pointer-events-none overflow-hidden">
         {/* Doves - Left Side */}
         <Bird className="absolute top-20 left-10 text-primary/20 w-12 h-12 animate-float" style={{ animationDelay: '0s' }} />
         <Bird className="absolute top-40 left-32 text-secondary/20 w-10 h-10 animate-float" style={{ animationDelay: '1s' }} />
@@ -216,32 +216,32 @@ const Index = () => {
           <div className="w-full h-full rounded-full bg-primary/25 animate-pulse">💗</div>
         </div>
         
-        {/* Papillons blancs qui défilent */}
-        <div className="absolute top-[20vh] left-0 text-white/60 w-8 h-8 animate-butterfly-fly" style={{ animationDelay: '0s' }}>
-          <div className="w-full h-full text-2xl">🦋</div>
+        {/* Papillons blancs qui défilent - EN AVANT PLAN */}
+        <div className="absolute top-[20vh] left-0 text-white w-10 h-10 animate-butterfly-fly drop-shadow-lg" style={{ animationDelay: '0s', zIndex: 30 }}>
+          <div className="w-full h-full text-3xl filter drop-shadow-2xl">🦋</div>
         </div>
-        <div className="absolute top-[40vh] left-0 text-white/50 w-6 h-6 animate-butterfly-fly" style={{ animationDelay: '3s' }}>
-          <div className="w-full h-full text-xl">🦋</div>
+        <div className="absolute top-[40vh] left-0 text-white w-8 h-8 animate-butterfly-fly drop-shadow-lg" style={{ animationDelay: '3s', zIndex: 30 }}>
+          <div className="w-full h-full text-2xl filter drop-shadow-2xl">🦋</div>
         </div>
-        <div className="absolute top-[60vh] left-0 text-white/70 w-7 h-7 animate-butterfly-fly" style={{ animationDelay: '6s' }}>
-          <div className="w-full h-full text-2xl">🦋</div>
+        <div className="absolute top-[60vh] left-0 text-white w-9 h-9 animate-butterfly-fly drop-shadow-lg" style={{ animationDelay: '6s', zIndex: 30 }}>
+          <div className="w-full h-full text-3xl filter drop-shadow-2xl">🦋</div>
         </div>
-        <div className="absolute top-[80vh] left-0 text-white/40 w-5 h-5 animate-butterfly-fly" style={{ animationDelay: '9s' }}>
-          <div className="w-full h-full text-lg">🦋</div>
+        <div className="absolute top-[80vh] left-0 text-white w-7 h-7 animate-butterfly-fly drop-shadow-lg" style={{ animationDelay: '9s', zIndex: 30 }}>
+          <div className="w-full h-full text-2xl filter drop-shadow-2xl">🦋</div>
         </div>
         
-        {/* Papillons qui volent en sens inverse */}
-        <div className="absolute top-[30vh] right-0 text-white/60 w-6 h-6 animate-butterfly-fly-reverse" style={{ animationDelay: '2s' }}>
-          <div className="w-full h-full text-xl">🦋</div>
+        {/* Papillons qui volent en sens inverse - EN AVANT PLAN */}
+        <div className="absolute top-[30vh] right-0 text-white w-8 h-8 animate-butterfly-fly-reverse drop-shadow-lg" style={{ animationDelay: '2s', zIndex: 30 }}>
+          <div className="w-full h-full text-2xl filter drop-shadow-2xl">🦋</div>
         </div>
-        <div className="absolute top-[50vh] right-0 text-white/50 w-8 h-8 animate-butterfly-fly-reverse" style={{ animationDelay: '5s' }}>
-          <div className="w-full h-full text-2xl">🦋</div>
+        <div className="absolute top-[50vh] right-0 text-white w-10 h-10 animate-butterfly-fly-reverse drop-shadow-lg" style={{ animationDelay: '5s', zIndex: 30 }}>
+          <div className="w-full h-full text-3xl filter drop-shadow-2xl">🦋</div>
         </div>
-        <div className="absolute top-[70vh] right-0 text-white/70 w-5 h-5 animate-butterfly-fly-reverse" style={{ animationDelay: '8s' }}>
-          <div className="w-full h-full text-lg">🦋</div>
+        <div className="absolute top-[70vh] right-0 text-white w-7 h-7 animate-butterfly-fly-reverse drop-shadow-lg" style={{ animationDelay: '8s', zIndex: 30 }}>
+          <div className="w-full h-full text-2xl filter drop-shadow-2xl">🦋</div>
         </div>
-        <div className="absolute top-[10vh] right-0 text-white/40 w-7 h-7 animate-butterfly-fly-reverse" style={{ animationDelay: '11s' }}>
-          <div className="w-full h-full text-xl">🦋</div>
+        <div className="absolute top-[10vh] right-0 text-white w-9 h-9 animate-butterfly-fly-reverse drop-shadow-lg" style={{ animationDelay: '11s', zIndex: 30 }}>
+          <div className="w-full h-full text-3xl filter drop-shadow-2xl">🦋</div>
         </div>
       </div>
 

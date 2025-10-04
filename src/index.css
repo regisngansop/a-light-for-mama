@@ -205,25 +205,32 @@ All colors MUST be HSL.
   0% {
     transform: translateX(-100px) translateY(0px) rotate(0deg);
     opacity: 0;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
   }
-  10% {
+  5% {
     opacity: 1;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
   }
   25% {
     transform: translateX(25vw) translateY(-20px) rotate(5deg);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
   }
   50% {
     transform: translateX(50vw) translateY(-10px) rotate(-3deg);
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 1));
   }
   75% {
     transform: translateX(75vw) translateY(-25px) rotate(4deg);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
   }
-  90% {
+  95% {
     opacity: 1;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
   }
   100% {
     transform: translateX(calc(100vw + 100px)) translateY(0px) rotate(0deg);
     opacity: 0;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
   }
 }
 
@@ -231,25 +238,32 @@ All colors MUST be HSL.
   0% {
     transform: translateX(calc(100vw + 100px)) translateY(0px) rotate(0deg);
     opacity: 0;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
   }
-  10% {
+  5% {
     opacity: 1;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
   }
   25% {
     transform: translateX(75vw) translateY(-15px) rotate(-4deg);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
   }
   50% {
     transform: translateX(50vw) translateY(-25px) rotate(3deg);
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 1));
   }
   75% {
     transform: translateX(25vw) translateY(-10px) rotate(-2deg);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
   }
-  90% {
+  95% {
     opacity: 1;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
   }
   100% {
     transform: translateX(-100px) translateY(0px) rotate(0deg);
     opacity: 0;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
   }
 }
 
