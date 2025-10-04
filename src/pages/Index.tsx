@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import mamanNjikiPhoto from "@/assets/maman-djiki-ruth.png";
 import backgroundPortrait from "@/assets/background-portrait.png";
 import doveWithOliveBranch from "@/assets/dove-with-olive-branch.png";
-import { Bird, Sparkles } from "lucide-react";
+import { Bird } from "lucide-react";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -184,11 +184,6 @@ const Index = () => {
         <Bird className="absolute top-[50vh] right-24 text-primary/20 w-13 h-13 animate-float" style={{ animationDelay: '1.8s' }} />
         <Bird className="absolute bottom-40 right-12 text-secondary/15 w-12 h-12 animate-float" style={{ animationDelay: '3s' }} />
         
-        {/* Angels/Stars - Sparkles representing divine presence */}
-        <Sparkles className="absolute top-[15vh] left-[15vw] text-accent/30 w-8 h-8 animate-pulse" style={{ animationDelay: '0s' }} />
-        <Sparkles className="absolute top-[35vh] right-[20vw] text-accent/25 w-6 h-6 animate-pulse" style={{ animationDelay: '1.5s' }} />
-        <Sparkles className="absolute top-[70vh] left-[25vw] text-accent/20 w-7 h-7 animate-pulse" style={{ animationDelay: '2s' }} />
-        <Sparkles className="absolute bottom-[20vh] right-[15vw] text-accent/30 w-9 h-9 animate-pulse" style={{ animationDelay: '0.8s' }} />
         
         {/* Bulles d'amour partout */}
         <div className="absolute top-[10vh] left-[10vw] text-primary/20 w-6 h-6 animate-float" style={{ animationDelay: '0.5s' }}>
@@ -236,32 +231,6 @@ const Index = () => {
           <div className="bg-gradient-to-r from-pink-500 via-rose-500 to-pink-600 p-6 border-b-4 border-white/20 shadow-lg relative overflow-hidden">
             {/* Effet de brillance */}
             <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-white/10"></div>
-            
-            {/* Papillons dans la section "En Mémoire de" */}
-            <div className="absolute inset-0 pointer-events-none overflow-hidden">
-              {/* Papillons qui défilent dans l'en-tête */}
-              <div className="absolute top-4 left-0 text-white/80 w-6 h-6 animate-butterfly-fly drop-shadow-lg" style={{ animationDelay: '0s', zIndex: 20 }}>
-                <div className="w-full h-full text-lg filter drop-shadow-xl">🦋</div>
-              </div>
-              <div className="absolute top-8 left-0 text-white/70 w-5 h-5 animate-butterfly-fly drop-shadow-lg" style={{ animationDelay: '4s', zIndex: 20 }}>
-                <div className="w-full h-full text-base filter drop-shadow-xl">🦋</div>
-              </div>
-              <div className="absolute top-12 left-0 text-white/90 w-7 h-7 animate-butterfly-fly drop-shadow-lg" style={{ animationDelay: '8s', zIndex: 20 }}>
-                <div className="w-full h-full text-xl filter drop-shadow-xl">🦋</div>
-              </div>
-              
-              {/* Papillons en sens inverse */}
-              <div className="absolute top-6 right-0 text-white/80 w-5 h-5 animate-butterfly-fly-reverse drop-shadow-lg" style={{ animationDelay: '2s', zIndex: 20 }}>
-                <div className="w-full h-full text-base filter drop-shadow-xl">🦋</div>
-              </div>
-              <div className="absolute top-10 right-0 text-white/70 w-6 h-6 animate-butterfly-fly-reverse drop-shadow-lg" style={{ animationDelay: '6s', zIndex: 20 }}>
-                <div className="w-full h-full text-lg filter drop-shadow-xl">🦋</div>
-              </div>
-              <div className="absolute top-14 right-0 text-white/90 w-4 h-4 animate-butterfly-fly-reverse drop-shadow-lg" style={{ animationDelay: '10s', zIndex: 20 }}>
-                <div className="w-full h-full text-sm filter drop-shadow-xl">🦋</div>
-              </div>
-            </div>
-            
             <div className="text-center relative z-10">
               <h1 className="text-4xl md:text-6xl font-bold text-white text-elegant-bold mb-2">
                 En Mémoire de

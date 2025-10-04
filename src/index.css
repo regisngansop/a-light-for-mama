@@ -201,80 +201,8 @@ All colors MUST be HSL.
   }
 }
 
-@keyframes butterfly-fly {
-  0% {
-    transform: translateX(-50px) translateY(0px) rotate(0deg);
-    opacity: 0;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
-  }
-  10% {
-    opacity: 1;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
-  }
-  30% {
-    transform: translateX(30%) translateY(-5px) rotate(3deg);
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
-  }
-  50% {
-    transform: translateX(50%) translateY(-3px) rotate(-2deg);
-    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 1));
-  }
-  70% {
-    transform: translateX(70%) translateY(-8px) rotate(2deg);
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
-  }
-  90% {
-    opacity: 1;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
-  }
-  100% {
-    transform: translateX(calc(100% + 50px)) translateY(0px) rotate(0deg);
-    opacity: 0;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
-  }
-}
-
-@keyframes butterfly-fly-reverse {
-  0% {
-    transform: translateX(calc(100% + 50px)) translateY(0px) rotate(0deg);
-    opacity: 0;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
-  }
-  10% {
-    opacity: 1;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
-  }
-  30% {
-    transform: translateX(70%) translateY(-3px) rotate(-2deg);
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
-  }
-  50% {
-    transform: translateX(50%) translateY(-5px) rotate(2deg);
-    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 1));
-  }
-  70% {
-    transform: translateX(30%) translateY(-2px) rotate(-1deg);
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
-  }
-  90% {
-    opacity: 1;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
-  }
-  100% {
-    transform: translateX(-50px) translateY(0px) rotate(0deg);
-    opacity: 0;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
-  }
-}
 
 .animate-float {
   animation: float 8s ease-in-out infinite;
 }
 
-.animate-butterfly-fly {
-  animation: butterfly-fly 8s linear infinite;
-}
-
-.animate-butterfly-fly-reverse {
-  animation: butterfly-fly-reverse 10s linear infinite;
-}
