@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import mamanDjikiPhoto from "@/assets/maman-djiki-ruth.png";
 import backgroundPortrait from "@/assets/background-portrait.png";
+import { Bird, Sparkles } from "lucide-react";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,6 +21,25 @@ const Index = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background/95"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-transparent to-background/90"></div>
+      </div>
+
+      {/* Floating Decorative Elements */}
+      <div className="fixed inset-0 z-5 pointer-events-none overflow-hidden">
+        {/* Doves - Left Side */}
+        <Bird className="absolute top-20 left-10 text-primary/20 w-12 h-12 animate-float" style={{ animationDelay: '0s' }} />
+        <Bird className="absolute top-40 left-32 text-secondary/20 w-10 h-10 animate-float" style={{ animationDelay: '1s' }} />
+        <Bird className="absolute top-[60vh] left-20 text-primary/15 w-14 h-14 animate-float" style={{ animationDelay: '2.5s' }} />
+        
+        {/* Doves - Right Side */}
+        <Bird className="absolute top-32 right-16 text-secondary/20 w-11 h-11 animate-float" style={{ animationDelay: '0.5s' }} />
+        <Bird className="absolute top-[50vh] right-24 text-primary/20 w-13 h-13 animate-float" style={{ animationDelay: '1.8s' }} />
+        <Bird className="absolute bottom-40 right-12 text-secondary/15 w-12 h-12 animate-float" style={{ animationDelay: '3s' }} />
+        
+        {/* Angels/Stars - Sparkles representing divine presence */}
+        <Sparkles className="absolute top-[15vh] left-[15vw] text-accent/30 w-8 h-8 animate-pulse" style={{ animationDelay: '0s' }} />
+        <Sparkles className="absolute top-[35vh] right-[20vw] text-accent/25 w-6 h-6 animate-pulse" style={{ animationDelay: '1.5s' }} />
+        <Sparkles className="absolute top-[70vh] left-[25vw] text-accent/20 w-7 h-7 animate-pulse" style={{ animationDelay: '2s' }} />
+        <Sparkles className="absolute bottom-[20vh] right-[15vw] text-accent/30 w-9 h-9 animate-pulse" style={{ animationDelay: '0.8s' }} />
       </div>
 
       {/* Content */}
