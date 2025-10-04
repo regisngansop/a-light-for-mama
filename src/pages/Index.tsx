@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import mamanDjikiPhoto from "@/assets/maman-djiki-ruth.png";
+import mamanNjikiPhoto from "@/assets/maman-djiki-ruth.png";
 import backgroundPortrait from "@/assets/background-portrait.png";
 import { Bird, Sparkles } from "lucide-react";
 
@@ -53,8 +53,8 @@ const Index = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-3xl animate-glow"></div>
             <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
               <img 
-                src={mamanDjikiPhoto} 
-                alt="Maman Djiki Ruth"
+                src={mamanNjikiPhoto} 
+                alt="Maman Njiki Ruth"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -62,14 +62,14 @@ const Index = () => {
 
           {/* Name */}
           <div className="space-y-2">
-            <h1 className="text-5xl md:text-7xl font-bold text-gradient">
-              Maman Djiki Ruth
+            <h1 className="text-5xl md:text-7xl font-bold text-gradient text-elegant-bold">
+              Maman Njiki Ruth
             </h1>
             <div className="h-1 w-32 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto"></div>
           </div>
 
           {/* Opening Quote */}
-          <p className="text-xl md:text-2xl text-foreground/80 italic font-light">
+          <p className="text-xl md:text-2xl text-foreground/80 italic font-light text-elegant">
             L'amour ne s'arrête pas.
           </p>
         </div>
@@ -90,7 +90,7 @@ const Index = () => {
           <div className="h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
 
           {/* Main Tribute */}
-          <article className="space-y-8 text-lg md:text-xl leading-relaxed text-foreground/90">
+          <article className="space-y-8 text-lg md:text-xl leading-relaxed text-foreground/90 text-elegant">
             <p className="animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'backwards' }}>
               Mon cœur est meurtri, mais je rends grâce à Dieu.
               Grâce pour ces souvenirs empreints d'amour, d'humour et d'enseignements.
@@ -98,7 +98,7 @@ const Index = () => {
             </p>
 
             <div className="my-8 p-8 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl border border-primary/10 shadow-soft animate-fade-in-up" style={{ animationDelay: '0.4s', animationFillMode: 'backwards' }}>
-              <p className="text-center font-medium text-primary">
+              <p className="text-center font-medium text-primary text-elegant-bold">
                 Que le Seigneur t'ouvre grandement les portes du paradis.
               </p>
             </div>
@@ -122,7 +122,7 @@ const Index = () => {
             </p>
 
             <div className="my-12 space-y-6 p-8 bg-gradient-to-br from-secondary/10 to-primary/5 rounded-2xl border border-secondary/20 animate-fade-in-up" style={{ animationDelay: '1.2s', animationFillMode: 'backwards' }}>
-              <p className="text-center text-xl md:text-2xl font-semibold">
+              <p className="text-center text-xl md:text-2xl font-semibold text-elegant-bold">
                 Aujourd'hui, nous ne pleurons plus…
               </p>
               <p className="text-center">
@@ -131,17 +131,17 @@ const Index = () => {
               <p className="text-center">
                 Et dans nos âmes, ton amour reste indéfectible —
               </p>
-              <p className="text-center text-2xl font-bold text-gradient">
+              <p className="text-center text-2xl font-bold text-gradient text-elegant-bold">
                 éternel
               </p>
             </div>
 
-            <p className="text-center text-2xl md:text-3xl font-bold text-primary animate-fade-in-up" style={{ animationDelay: '1.4s', animationFillMode: 'backwards' }}>
+            <p className="text-center text-2xl md:text-3xl font-bold text-primary animate-fade-in-up text-elegant-bold" style={{ animationDelay: '1.4s', animationFillMode: 'backwards' }}>
               Je t'aime
             </p>
             
-            <p className="text-center text-xl md:text-2xl font-semibold animate-fade-in-up" style={{ animationDelay: '1.6s', animationFillMode: 'backwards' }}>
-              Maman Djiki Ruth
+            <p className="text-center text-xl md:text-2xl font-semibold animate-fade-in-up text-elegant-bold" style={{ animationDelay: '1.6s', animationFillMode: 'backwards' }}>
+              Maman Njiki Ruth
             </p>
           </article>
 
