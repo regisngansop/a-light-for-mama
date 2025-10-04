@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import mamanDjikiPhoto from "@/assets/maman-djiki-ruth.png";
+import backgroundPortrait from "@/assets/background-portrait.png";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,9 +10,22 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-background via-muted/30 to-background">
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-20">
+    <main className="min-h-screen relative">
+      {/* Background Image with Overlay */}
+      <div className="fixed inset-0 z-0">
+        <img 
+          src={backgroundPortrait} 
+          alt="" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background/95"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-transparent to-background/90"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10">
+        {/* Hero Section */}
+        <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-20">
         <div className={`max-w-4xl mx-auto text-center space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           
           {/* Photo */}
@@ -48,8 +62,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Tribute Text Section */}
-      <section className="relative py-20 px-4">
+        {/* Tribute Text Section */}
+        <section className="relative py-20 px-4">
         <div className="max-w-3xl mx-auto space-y-12">
           
           {/* Decorative Line */}
@@ -117,8 +131,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer Section */}
-      <section className="relative py-16 px-4">
+        {/* Footer Section */}
+        <section className="relative py-16 px-4">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <div className="inline-block p-6 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full">
             <svg 
@@ -134,7 +148,8 @@ const Index = () => {
             « Son amour brille à jamais dans nos cœurs »
           </p>
         </div>
-      </section>
+        </section>
+      </div>
     </main>
   );
 };
